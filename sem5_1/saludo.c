@@ -3,10 +3,12 @@
 //Definicion de la funcion llamada salludar()
 //Parametros : NINGUNO
 //Salida     : NINGUNA(void)
-
+int devolver_anio_actual(){
+return 2026;
+}
 void saludar(){
     
-    printf("Bienvenidas a SW303");
+    printf("Bienvenidas a SW303 en este anio %d \n",devolver_anio_actual());
 
 }
 //funcion principal (main), aqui comienza todo
