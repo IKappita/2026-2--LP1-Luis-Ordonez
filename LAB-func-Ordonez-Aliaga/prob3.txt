@@ -1,0 +1,22 @@
+Actividades:
+1. Predecir la salida de cada uno.
+Programa A(variable local)
+1->1->1->0
+Programa B(variable global)
+1->2->3
+2. Compilar y verificar. ¿Sorpresa?
+Salida del programa A
+local contador = 1
+local contador = 1
+local contador = 1
+global contador = 0
+
+Salida del programa B
+global contador = 3
+3. Refactorizar para eliminar la variable global: pasar el
+contador por parámetro y retornar el nuevo valor:
+int incrementar(int contador) { return contador +
+1; }
+programas refactorizados
+-progA.c
+-progB.c
